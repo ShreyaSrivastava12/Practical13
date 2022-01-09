@@ -16,7 +16,7 @@ class Derived: public Base{
     { 
         cout << "Show() called";
         cout<<endl;
-     }
+    }
     virtual int add(int y)
     {
         return(y+3);
@@ -27,6 +27,6 @@ int main(void)
     Base *p;
     Derived obj;
     p = &obj;
-    p->show();
-//abstraction was in Base class as pure virtual function is in base class
+    cout<<p->add(56)<<endl;
+    cout<<endl;
 }
